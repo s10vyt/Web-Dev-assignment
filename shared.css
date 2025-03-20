@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Winky+Sans:ital,wght@0,300..900;1,300..900&display=swap');
+
 * {
     padding: 0;
     margin: 0;
@@ -7,4 +9,42 @@ body {
     background: #536976;
     background: -webkit-linear-gradient(to right, #292E49, #536976);
     background: linear-gradient(to right, #292E49, #536976);
+}
+
+nav ul{
+    list-style: none;
+    display: flex;
+    gap: 0.8em;
+    font-size: 20px;
+    font-family: winky sans , Arial, Helvetica, sans-serif;
+}
+
+
+nav a {
+    text-decoration: none;
+    color: white;
+    padding-bottom: 10px;
+    position: relative;
+}
+
+nav a::after {
+    content: "";
+    background-color: blueviolet;
+    width: 0%;
+    position: absolute;
+    left: 0;
+    height: 3px;
+    transition: width 0.3s ease-in-out;
+    bottom: 5px;
+}
+
+nav a:hover::after {
+    width: 100%;
+}
+
+nav {
+    justify-content: center;
+    display: flex;
+    padding: 15px;
+
 }
