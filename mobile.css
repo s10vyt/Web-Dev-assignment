@@ -1,7 +1,60 @@
-nav {
+#menu-toggle {
     display: none;
+}
+
+/* Style for hamburger icon */
+.menu-btn {
+    display: block;
+    font-size: 30px;
+    cursor: pointer;
+    color: white;
+    position: absolute;
+    top: 15px;
+    right: 20px;
+    z-index: 1001;
+}
+
+/* Style for navigation */
+nav {
+    position: fixed;
+    top: 0;
+    right: -100%; /* Hidden initially */
+    width: 250px;
+    height: 100vh;
+    background: rgba(16, 23, 59, 0.9);
+    transition: right 0.3s ease-in-out;
+    display: flex;
     flex-direction: column;
-    font-size: 10px;
+    align-items: center;
+    justify-content: center;
+    z-index: 1000;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li {
+    margin: 20px 0;
+}
+
+nav a {
+    text-decoration: none;
+    color: white;
+    font-size: 22px;
+}
+
+#menu-toggle:checked ~ nav {
+    right: 0;
+}
+
+#menu-toggle:checked + .menu-btn::before {
+    content: "✖"; 
+}
+
+.menu-btn::before {
+    content: "☰";
 }
 
 .home {
