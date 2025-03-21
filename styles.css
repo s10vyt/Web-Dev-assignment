@@ -221,3 +221,26 @@ nav {
     color: white;
 }
 
+
+
+.demomain h2 {
+    background-color: wheat;
+    z-index: 100;
+    padding-bottom: 10em;
+    margin: 5em 35% 1em;
+}
+.demomain a{
+    font-size: 15px;
+    text-decoration: none;
+    color: white;
+    font-size: 25px;
+    margin: auto 35%;
+}
+
+.demomain a:hover{
+    font-size: 15px;
+    text-decoration: none;
+    color: rgb(234, 255, 0);
+    font-size: 25px;
+    margin: auto 35%;
+}
