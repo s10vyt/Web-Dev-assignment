@@ -16,7 +16,7 @@ nav a {
 
 nav a::after {
     content: "";
-    background-color: blueviolet;
+    background-color: #a376cd;
     width: 0%;
     position: absolute;
     left: 0;
@@ -31,7 +31,7 @@ nav a:hover::after {
 
 .active::after {
     content: "";
-    background-color: blueviolet;
+    background-color: #a376cd;
     width: 100%;
     position: absolute;
     left: 0;
@@ -223,18 +223,26 @@ nav {
 
 
 
-.demomain h2 {
-    background-color: wheat;
+.demomain iframe {
+    /* background-color: wheat; */
     z-index: 100;
-    padding-bottom: 10em;
-    margin: 5em 35% 1em;
+    /* padding-bottom: 10em; */
+    min-width: 50%;
+    /* margin: 5em 35% 1em; */
+    margin-left: 10em;
+    height: 25em;
 }
 .demomain a{
     font-size: 15px;
     text-decoration: none;
+    text-align: left;
     color: white;
     font-size: 25px;
-    margin: auto 35%;
+    padding-left: 200px;
+    /* padding-top: -100px; */
+    /* margin-right: 10em; */
+    /* margin: auto 35%; */
+    display: block;
 }
 
 .demomain a:hover{
@@ -242,5 +250,7 @@ nav {
     text-decoration: none;
     color: rgb(234, 255, 0);
     font-size: 25px;
-    margin: auto 35%;
+    /* margin: auto 35%; */
 }
+
+
